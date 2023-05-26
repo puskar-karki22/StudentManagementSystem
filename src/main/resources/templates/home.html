@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Student Management System</title>
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Student Management System</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+</nav>
+
+<div class ="container">
+  <div class = "text-center" style="margin-bottom: 40px;">
+    <h1> Student Rest Service </h1>
+  </div>
+
+  <div class = "text-center" style="font-family:Arial, Helvetica, sans-serif ; font-size: 30px;">
+    <h4 class=style="font-size:20px;">Click on the "Add Student" button to add the students</h1>
+    <div class = "col-lg-3 text-center" style="display:inline-block;text-align:center;margin-top: 30px;margin-bottom: 40px">
+      <a th:href = "@{/student/new}" class = "btn btn-primary btn-sm mb-3"> Add Student</a>
+    </div>
+    <h4 class=style="font-size:20px;">Click on the "View Students" button to get the list of students</h1>
+    <div class = "col-lg-3" style="display:inline-block;text-align:center;margin-top: 30px;margin-bottom: 40px">
+      <a th:href = "@{/students}" class = "btn btn-primary btn-sm mb-3">View Students</a>
+    </div>
+  </div>
+  
+
+</body>
+</html>
